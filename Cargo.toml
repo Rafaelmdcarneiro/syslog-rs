@@ -1,0 +1,17 @@
+[package]
+
+name = "syslog"
+version = "6.1.1"
+authors = [ "contact@geoffroycouprie.com" ]
+description = "Send log messages to syslog"
+license = "MIT"
+repository = "https://github.com/Geal/rust-syslog"
+documentation = "https://docs.rs/syslog"
+keywords = ["syslog", "logs", "logging"]
+
+[dependencies]
+hostname    = "0.3.1"
+time        = { version = "0.3.5", features = ["local-offset", "formatting"] }
+log         = { version = "0.4.8", features = [ "std" ] }
+error-chain = { version = "0.12.2", default-features = false }
+libc = "0.2.112"
